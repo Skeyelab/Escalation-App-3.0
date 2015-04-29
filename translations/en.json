@@ -1,0 +1,112 @@
+{
+  "app": {
+    "description":  "Escalation App",
+    "name":         "Escalation App",
+    "parameters": {
+      "ancestry": {
+        "label": "Ancestry Field ID",
+        "helpText": "Place a custom text field ID here to store the ancestry data. Example : 2240041"
+      },
+      "config": {
+        "label": "Config",
+        "helpText": "The configuration of the templates (JSON)"
+      },
+      "resolution_field": {
+        "label": "Resolution Field ID",
+        "helpText": "A checkbox custom field id that will be checked when child ticket is solved."
+      },
+      "child_field": {
+        "label": "Child Field ID",
+        "helpText": "A custom text field that will store the child ticket ID."
+      },
+      "escalation_field": {
+        "label": "Escalated Ticket Field ID",
+        "helpText": "Dropdown field to store parent_ticket tag."
+      },
+      "escalation_reason": {
+        "label": "Escalation Reason ID",
+        "helpText": "A custom dropdown field that will store the escalation reason."
+      }
+    }
+  },
+  "messages": {
+    "has_parent": "Click to view customer ticket.",
+    "has_child": "This ticket has been escalated.",
+    "solve_child_first": "There is still an open escalation for this ticket. Please update the escalations ticket with resolution and mark as solved before resolving this ticket.",
+    "spinner_text": "loading...",
+    "additional_comment_placeholder": "Additional comment",
+    "comment_from_child": "Update from the Resolutions Team",
+    "parse_error": "The following error occurred when replacing placeholders",
+    "relation_update_failed": "Relation update failed with: {{error}}"
+  },
+  "ticket": {
+    "id": "ID",
+    "subject": "Subject",
+    "status": "Status",
+    "type": "Type",
+    "assignee": "Assignee",
+    "group": "Group"
+  },
+  "escalation": {
+    "reason_for_escalation": "Reason for escalation",
+    "confirm": "Confirm Escalation",
+
+    "categories": {
+      "code_issues": "Code issues",
+      "product_issues": "Product & delivery issues",
+      "redemption_issues": "Redemption & contact issues",
+      "team_leader": "Team Leader"
+    },
+
+    "subcategories": {
+      "esc_301": {
+        "title": "Code does not work",
+        "body" : "Please provide a detailed summary of the issue:\n\nHas the customer contacted the merchant already? Please give details of when and how.\n\nWhat was the merchant response?\n\nWhat code did the customer use when they attempted to redeem?\n\nWhat is the Redemption Platform? (e.g. off site or Groupon tool)\n\nDid the customer get an error message? If so, what was it? Please attach a screen shot if possible.\n\nWhat is the customer's desired resolution?"
+      },
+      "esc_302": {
+        "title": "Product is damaged/broken",
+        "body" : "Please provide detailed information on what is broken and how; if you have photographs please attach to the ticket:\n\nFor products purchased more than 6 months ago we need photographs to assess the damage.\n\nWhen did the customer receive the product? How long after that did it break?\n\nPlease provide additional information: (invoice, warranty, etc.)\n\nWhat is the customer's desired resolution?"
+      },
+      "esc_303": {
+        "title": "Customer requires additional information about their order",
+        "body" : "What additional information is required?\n\nPlease provide the deal link:"
+      },
+      "esc_304": {
+        "title": "Delayed Order",
+        "body" : "Please provide a detailed summary of the issue:\n\nWhat does the tracking information show for the status?\n\nIf the product is marked as 'delivered' has the customer confirmed their neighbours have not received it?\n\nDoes the customer confirm this is the correct delivery address?\n\nFor DCO deals, has the customer already contacted the merchant? What was their response?\n\nWhat is the customer's desired resolution?"
+      },
+      "esc_305": {
+        "title": "Incomplete Order",
+        "body" : "Please provide a detailed summary of the issue:\n\nWhat item is missing?\n\nIs there a receipt inside the package? Does the receipt contain any additional information about the missing part? (If possible please attach)\n\nFor DCO deals, has the customer already contacted the merchant? What was their response?\n\nWhat is the customer's desired resolution?"
+      },
+      "esc_306": {
+        "title": "Customer has returned product, no refund received",
+        "body" : "Why is the customer returning the product:\n\nWhen did they receive the product?\n\nHas the customer returned the product already?\n\nWhat date did the customer return the product?\n\nDoes the customer have proof of postage or a tracking number for the return? Please provide that here/attach to ticket:\n\nFor DCO deals, has the customer already contacted the merchant? What was their response?\n\nDoes the customer have confirmation of return from the merchant?"
+      },
+      "esc_307": {
+        "title": "Booking issue",
+        "body" : "Please provide a detailed summary of the issue:\n\nHas the customer contacted the merchant already? Please give details of when and how.\n\nWhat date is the customer trying to book for?\n\nIf the booking has been cancelled, who cancelled it? (Merchant/customer)\n\nIf the booking has been cancelled, was the cancellation policy and fine print followed?\n\nHas an alternative date been offered?\n\nHow did the customer try to book?\n\nDid they receive an email confirming their booking? Please provide a copy if possible.\n\nWhat is the customer's desired resolution?"
+      },
+      "esc_308": {
+        "title": "Quality of service issue",
+        "body" : "Please provide a detailed summary of the issue:\n\nHas the customer contacted the merchant already? Please give details of when and how.\n\nDid the customer complain at the time of receiving the service? What was the outcome?\n\nWhen did the customer receive the service? (Be specific with the date and time)\n\nPlease provide a detailed summary of the issue: (be sure to include specific information, such as type of service, car make, type of hair removal etc,)\n\nWhat is the customer's desired resolution?"
+      },
+      "esc_309": {
+        "title": "Customer not eligible for treatment",
+        "body" : "Has the customer got confirmation from the merchant?\n\nWhat date was the booking?\n\nWhat is the customer’s full name?\n\nDoes the voucher show as redeemed in Cyclops?\n\nPlease provide any additional information about their ineligibility:"
+      },
+      "esc_310": {
+        "title": "Conditions different than advertised",
+        "body" : "Please provide a detailed summary of the issue:\n\nHas the customer contacted the merchant already? Please give details of when and how.\n\nHas the customer received the service? If yes, when was their appointment?\n\nWhat is not as advertised? Do they have any evidence to support this? (e.g. website with conflicting price, etc)\n\nCustomer's Desired Outcome:"
+      },
+      "esc_311": {
+        "title": "Refund request / refund issues",
+        "body" : "Please provide a detailed summary of the issue:"
+      },
+      "esc_312": {
+        "title": "Customer Specific Escalation",
+        "body" : "Please provide a detailed summary of the issue:"
+      }
+    }
+  }
+}

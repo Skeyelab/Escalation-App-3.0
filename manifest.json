@@ -1,0 +1,45 @@
+{
+  "name": "Escalation App",
+  "author": {
+    "name": "Zendesk Services",
+    "email": "services@zendesk.com"
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": "ticket_sidebar",
+  "frameworkVersion": "1.0",
+  "version": "3.3",
+  "parameters": [
+    {
+      "name": "ancestry",
+      "type": "text",
+      "required": true,
+      "default": 23072537
+    },
+    {
+      "name": "config",
+      "type": "multiline",
+      "required": true
+    },
+    {
+      "name": "resolution_field",
+      "type": "text",
+      "default": 23046723
+    },
+    {
+      "name": "child_field",
+      "type": "text",
+      "default": 24258711
+    },
+    {
+      "name": "escalation_field",
+      "type": "text",
+      "default": 24258701
+    },
+    {
+      "name": "escalation_reason",
+      "type": "text",
+      "default": 26083301
+    }
+  ]
+}

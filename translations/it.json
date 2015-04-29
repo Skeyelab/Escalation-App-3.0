@@ -1,0 +1,108 @@
+{
+  "app": {
+    "description":  "Escalation App",
+    "name":         "Escalation App",
+    "parameters": {
+      "ancestry": {
+        "label": "Ancestry Field ID",
+        "helpText": "Place a custom text field ID here to store the ancestry data. Example : 2240041"
+      },
+      "config": {
+        "label": "Config",
+        "helpText": "The configuration of the templates (JSON)"
+      },
+      "resolution_field": {
+        "label": "Resolution Field ID",
+        "helpText": "A checkbox custom field id that will be checked when child ticket is solved."
+      },
+      "child_field": {
+        "label": "Child Field ID",
+        "helpText": "A custom text field that will store the child ticket ID."
+      },
+      "escalation_field": {
+        "label": "Escalation Field ID",
+        "helpText": "A custom text field that will store the parent ticket ID."
+      },
+      "escalation_reason": {
+        "label": "Escalation Reason ID",
+        "helpText": "A custom dropdown field that will store the escalation reason."
+      }
+    }
+  },
+  "messages": {
+    "has_parent": "Click to view customer ticket.",
+    "has_child": "This ticket has been escalated.",
+    "solve_child_first": "There is still an open escalation for this ticket. Please update the escalations ticket with resolution and mark as solved before resolving this ticket.",
+    "spinner_text": "loading...",
+    "additional_comment_placeholder": "Additional comment",
+    "comment_from_child": "Update from the Resolutions Team",
+    "parse_error": "The following error occurred when replacing placeholders",
+    "relation_update_failed": "Relation update failed with: {{error}}"
+  },
+  "ticket": {
+    "id": "ID",
+    "subject": "Subject",
+    "status": "Status",
+    "type": "Type",
+    "assignee": "Assignee",
+    "group": "Group"
+  },
+  "escalation": {
+    "reason_for_escalation": "Reason for escalation",
+    "confirm": "Confirm Escalation",
+
+    "categories": {
+      "code_issues": "Problema con i codici",
+      "product_issues": "Prodotto e Problemi sulla spedizione",
+      "redemption_issues": "Problemi di Utilizzo & contatto con il partner",
+      "team_leader": "Team Leader"
+    },
+
+    "subcategories": {
+      "esc_ci1": {
+        "title": "Codice non funzionante",
+        "body" : "..."
+      },
+      "esc_pi1": {
+        "title": "Problema con il prodotto ricevuto",
+        "body" : ""
+      },
+      "esc_pi2": {
+        "title": "Problema con il Tracking Number",
+        "body" : ""
+      },
+      "esc_pi3": {
+        "title": "Prodotto non ricevuto",
+        "body" : ""
+      },
+      "esc_pi4": {
+        "title": "Incomplete Order",
+        "body" : ""
+      },
+      "esc_pi5": {
+        "title": "Problema con la restituzione del prodotto / Ritiro Prodotto",
+        "body" : ""
+      },
+      "esc_rci1": {
+        "title": "Problema Booking / Mytable",
+        "body" : ""
+      },
+      "esc_rci2": {
+        "title": "Quality of service issue",
+        "body" : ""
+      },
+      "esc_rci3": {
+        "title": "Problema di qualità del servizio",
+        "body" : ""
+      },
+      "esc_rci4": {
+        "title": "Condizioni Differenti da quanto pubblicizzato",
+        "body" : ""
+      },
+      "esc_rri1": {
+        "title": "Richiesta Refund / Problema con il rimborso",
+        "body" : ""
+      }
+    }
+  }
+}

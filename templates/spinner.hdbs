@@ -1,0 +1,2 @@
+<span>{{spinner "dotted"}}</span>
+<p class='spinner_text'>{{t "messages.spinner_text"}}</p>

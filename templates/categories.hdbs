@@ -1,0 +1,32 @@
+<div>
+  <select class="sub_category">
+    <option value="-1">{{t "escalation.reason_for_escalation"}}:</option>
+    <option value="-1" disabled="disabled">------</option>
+
+    <optgroup label='{{t "escalation.categories.code_issues"}}'>
+      <option value="esc_301">{{t "escalation.subcategories.esc_301.title"}}</option>
+    </optgroup>
+    <optgroup label='{{t "escalation.categories.product_issues"}}'>
+      <option value="esc_302">{{t "escalation.subcategories.esc_302.title"}}</option>
+      <option value="esc_303">{{t "escalation.subcategories.esc_303.title"}}</option>
+      <option value="esc_304">{{t "escalation.subcategories.esc_304.title"}}</option>
+      <option value="esc_305">{{t "escalation.subcategories.esc_305.title"}}</option>
+      <option value="esc_306">{{t "escalation.subcategories.esc_306.title"}}</option>
+    </optgroup>
+    <optgroup label='{{t "escalation.categories.redemption_issues"}}'>
+      <option value="esc_307">{{t "escalation.subcategories.esc_307.title"}}</option>
+      <option value="esc_308">{{t "escalation.subcategories.esc_308.title"}}</option>
+      <option value="esc_309">{{t "escalation.subcategories.esc_309.title"}}</option>
+      <option value="esc_310">{{t "escalation.subcategories.esc_310.title"}}</option>
+    </optgroup>
+    <optgroup label='{{t "escalation.categories.team_leader"}}'>
+      <option value="esc_311">{{t "escalation.subcategories.esc_311.title"}}</option>
+	  <option value="esc_312">{{t "escalation.subcategories.esc_312.title"}}</option>
+    </optgroup>
+  </select>
+
+  <div class="comment-form">
+    <textarea placeholder="{{t "messages.additional_comment_placeholder"}}" class="additional-comment">{{additional_comment}}</textarea>
+    <button class="btn btn-inverse btn-confirm" data-action="{{escalation_reason}}">{{t "escalation.confirm"}}</button>
+  </div>
+</div>
