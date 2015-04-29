@@ -36,3 +36,4 @@ Here's an example of a configuration template:
   }
 ]
 ```
+# Escalation-App-3.0
